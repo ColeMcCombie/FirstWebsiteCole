@@ -3,83 +3,98 @@
 <head>
   <meta charset="UTF-8">
   <title>Blue Lagoon Cinema: Cinema Listings</title>
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Architects Daughter' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Alegreya+SC|Alegreya:400italic,400,700' rel='stylesheet' type='text/css'>
+    <link href="styles/normalize.css" rel="stylesheet">
   <link href="styles/main.css" rel="stylesheet">
-  <link href="styles/normalize.css" rel="stylesheet">
-</head>
+    </head>
 <body>
-    <header>
-        <a href="main.html"><img src="images/Blue-Lagoon-logo.jpg"></a>
-        <nav>
-            <ul>
-                <li><a href="main.html">Home Page</a></li>
-                <li><a href="BlueLagoonClub.html">Blue Lagoon Club</a></li>
-                <li><a href="Food&Drink.html">Food &amp; Drink</a></li>
-                <li><a href="location.html">Location &amp; Hours</a></li>
-                <li><a href="thebar.html">The Blue Lagoon Bar</a></li>
-                <li><a href="cinemalistings.html">Cinema Listings</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <div>
-        <h1>Cinema Listings</h1>
-        <h2>Whats on</h2>
-        <p>Our venue has 6 viewing screens, all inlcuding 100 comfy seats with drinks holders in the arm rest. We also habe 50 VIP reclining seats also available for an added charge.</p>
-    </div>
-    
-    <div>
-        <h3>Showing This Week</h3>
-        <ul>
-            <li>Avengers: Age Of Ultron</li>    
-            <li>AntMan</li>    
-            <li>Minions</li>    
-            <li>Jurassic World</li>    
-            <li>The Martian</li>    
-            <li>The Hunger Games: Mockingjay Part 2</li>
-        </ul>
-    </div>
-    
-    <div>
-        <h3>This Weeks Movie Times</h3>
-        <ul>
-            <li>Avengers: Age Of Ultron</li>
+    <div class="container">
+        <header>
+            <a href="index.html" class="logo"><img src="images/maybelogo.jpg" alt="BlueLagoonlogo"></a>
+            <nav class="main-navigation">
                 <ul>
-                    <li>Weekdays at 11.30am, 3pm, 6.30pm, 10pm</li>
-                    <li>Weekends at 11am, 2.30pm, 6pm</li>
+                    <li><a href="index.html">Home Page</a></li>
+                    <li><a href="BlueLagoonClub.html">Blue Lagoon Club</a></li>
+                    <li><a href="Food&Drink.html">Food &amp; Drink</a></li>
+                    <li><a href="location.html">Location &amp; Hours</a></li>
+                    <li><a href="thebar.html">The Blue Lagoon Bar</a></li>
+                    <li><a href="cinemalistings.html">Cinema Listings</a></li>
                 </ul>
-            <li>AntMan</li>
-                <ul>
-                    <li>Weekdays at 10.30am, 2pm, 5pm, 8.30pm</li>
-                    <li>Weekends at 12pm, 4pm, 7.30pm</li>
-                </ul>
-            <li>Minions</li>
-                <ul>
-                    <li>Weekdays at 11.30am, 2.30pm, 5.30pm, 8pm</li>
-                    <li>Weekends at 11am, 2.30pm, 6.30pm</li>
-                </ul>
-            <li>Jurassic World</li>
-                <ul>
-                    <li>Weekdays at 12pm, 3pm, 6.30pm, 10pm</li>
-                    <li>Weekends at 1pm, 4pm, 7.30pm</li>
-                </ul>
-            <li>The Martian</li>
-                <ul>
-                    <li>Weekdays at 10.30am, 1pm, 4,30pm, 8pm</li>
-                    <li>Weekends at 11am, 230pm, 6.30pm</li>
-                </ul>
-            <li>The Hunger Games: Mockingjay Part 2</li>
-                <ul>
-                    <li>Weekdays at 1130am, 3pm, 6.30pm, 10pm</li>
-                    <li>Weekends at 1pm, 4pm, 7.30pm</li>
-                </ul>
-        </ul>
-    </div>
-    
-        <footer>
-            <h4>CONTACT US</h4>
+            </nav>
+        </header>
 
-            <p>01234 567890</p>
-            <p>contact@BlueLagoonCinema.blc</p>
-        </footer>
+        <div>
+            <h1>Cinema Listings</h1>
+            <h2>Whats on</h2>
+            <p>Our venue has 6 viewing screens, all inlcuding 100 comfy seats with drinks holders in the arm rest. We also habe 50 VIP reclining seats also available for an added charge.</p>
+        </div>
+
+          <div>
+            <img src="images/movies/Avengers-Age-of-Ultron.jpeg" alt="AvengersPoster">
+            <img src="images/movies/Marvel-Ant-Man-Banner-Poster.jpg" alt="AntmanPoster">
+            <img src="images/movies/Minions%20Film.jpg" alt="MinionsPoster">
+            <img src="images/movies/jurassicworld.jpg" alt="JurassicWorldPoster">        
+            <img src="images/movies/the-martian.jpg" alt="TheMartianPoster">
+            <img src="images/movies/mockingjaypart2.jpg" alt="HungerGamesPoster">
+
+        </div>
+
+        <div>
+            <h3>Showing This Week</h3>
+            <ul>
+                <li>Avengers: Age Of Ultron</li>    
+                <li>AntMan</li>    
+                <li>Minions</li>    
+                <li>Jurassic World</li>    
+                <li>The Martian</li>    
+                <li>The Hunger Games: Mockingjay Part 2</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>This Weeks Movie Times</h3>
+            <ul>
+                <li>Avengers: Age Of Ultron</li>
+                    <ul>
+                        <li>Weekdays at 11.30am, 3pm, 6.30pm, 10pm</li>
+                        <li>Weekends at 11am, 2.30pm, 6pm</li>
+                    </ul>
+                <li>AntMan</li>
+                    <ul>
+                        <li>Weekdays at 10.30am, 2pm, 5pm, 8.30pm</li>
+                        <li>Weekends at 12pm, 4pm, 7.30pm</li>
+                    </ul>
+                <li>Minions</li>
+                    <ul>
+                        <li>Weekdays at 11.30am, 2.30pm, 5.30pm, 8pm</li>
+                        <li>Weekends at 11am, 2.30pm, 6.30pm</li>
+                    </ul>
+                <li>Jurassic World</li>
+                    <ul>
+                        <li>Weekdays at 12pm, 3pm, 6.30pm, 10pm</li>
+                        <li>Weekends at 1pm, 4pm, 7.30pm</li>
+                    </ul>
+                <li>The Martian</li>
+                    <ul>
+                        <li>Weekdays at 10.30am, 1pm, 4,30pm, 8pm</li>
+                        <li>Weekends at 11am, 230pm, 6.30pm</li>
+                    </ul>
+                <li>The Hunger Games: Mockingjay Part 2</li>
+                    <ul>
+                        <li>Weekdays at 1130am, 3pm, 6.30pm, 10pm</li>
+                        <li>Weekends at 1pm, 4pm, 7.30pm</li>
+                    </ul>
+            </ul>
+        </div>
+
+            <footer>
+                <h4>CONTACT US</h4>
+
+                <p>01234 567890</p>
+                <p>contact@BlueLagoonCinema.blc</p>
+            </footer>
+        </div>
     </body>
 </html>

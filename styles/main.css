@@ -1,0 +1,148 @@
+/*________________________________________________________________________
+                            COLOR GUIDE
+Blue: rgb(43, 18, 234);
+Light Blue: rgb(98, 173, 201);
+GREY: rgb(128, 128, 128);
+BLACK: rgb(15, 15, 15);
+       rgba(15, 15, 15, 0.74)
+________________________________________________________________________*/
+/*________________________________________________________________________
+                            GLOBAL STYLES
+
+
+________________________________________________________________________*/
+
+body {
+    font-size: 19px;
+    font-family: "Architects Daughter", calibri, candara, Optima, Arial, sans-serif;
+    color: #039898;
+    background: rgb(56, 69, 93);
+    background-image: url(../Images/Background/filmreel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    background: rgb(15,15,15); /*IE8 */
+    background: rgba(15, 15, 15, 0.72);
+    padding: 30px;
+}
+
+h1, h2, h3 {
+    font-family: "Pacifico", calibri, candara, Optima, Arial, sans-serif;
+    font-weight: normal;    
+}
+
+h1 {
+    font-size: 3.3684em;    
+    line-height: 1.256em;
+    margin-top: 0.4219em;
+    margin-bottom: 0;
+    color: rgb(98, 173, 201);    
+}
+
+h2 {
+    font-size: 1.5em;
+    font-family: Indie - Flower;
+    line-height: 1.2558em;
+    margin: 0.4219em auto 0.4219em auto; 
+    color: rgb(226, 226, 226)
+}
+
+h3 {
+    font-size: 1.5263em;
+    line-height: 1.8621em;
+    margin-top: 0.9310em;
+    margin-bottom: 0;
+    color: rgb(226, 226, 226)
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.4211em;
+    margin-top: 1.4211em;
+    margin-bottom: 0;
+    color: rgb(98, 173, 201);
+}
+
+img {
+    width: 100%;    
+}
+
+a:link {
+    color: rgba(180, 180, 180);
+}
+    a:visited {
+        color: rgba(83, 221, 150, 0.57);
+    }
+    a:hover {
+        color: rgb(73, 132, 212);
+    }
+    a:active {
+        color: rgb(244, 241, 247);
+    }
+/*________________________________________________________________
+                        LOGO STYLES
+________________________________________________________________*/
+.logo {
+    display: block;  
+    margin: 0 auto; /* centres*/
+    width: 550px;
+}
+    .logo img {
+        width: 550px;
+}
+/*________________________________________________________________
+                    MAIN NAVIGATION STYLES
+________________________________________________________________*/
+.main-navigation ul {   
+    padding-left: 0;    
+}
+.main-navigation li {
+    list-style: none;
+    text-align: center;
+    margin: 20px 0;
+}
+.main-navigation a {
+    display: block;
+    padding: 15px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: rgba(9, 26, 54, 0.44);
+    color: rgb(180, 180, 180);
+}
+.main-navigation a:visited {
+    color: rgb(180, 180, 180);
+}
+.main-navigation a:hover {
+    color: rgb(255,255,255);
+    transition: .5s color;
+    background: rgba(49, 82, 190, 0.28);
+}
+.main-navigation a:active {
+    color: rgb(42, 99, 206);
+}
+/*________________________________________________________________
+                      HOME PAGE STYLES
+________________________________________________________________*/
+.featured-info {
+    
+}
+
+
+/*________________________________________________________________
+                    GLOBAL FOOTER STYLES
+________________________________________________________________*/
+
+footer {
+    padding: 10px 0;
+    color: midnightblue;
+}
+
+    h4 {
+        text-transform: uppercase;
+    }
+
+    footer p {
+        margin: 0;
+    }
