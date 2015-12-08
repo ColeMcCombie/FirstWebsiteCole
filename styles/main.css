@@ -8,26 +8,27 @@ BLACK: rgb(15, 15, 15);
 ________________________________________________________________________*/
 /*________________________________________________________________________
                             GLOBAL STYLES
-
-
 ________________________________________________________________________*/
 
 body {
     font-size: 19px;
     font-family: "Architects Daughter", calibri, candara, Optima, Arial, sans-serif;
-    color: #039898;
+    color: rgb(98, 146, 201);
     background: rgb(56, 69, 93);
     background-image: url(../Images/Background/filmreel.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-image: rgba(15, 15, 15, 0.72);
+   
 }
 
 .container {
     background: rgb(15,15,15); /*IE8 */
     background: rgba(15, 15, 15, 0.72);
     padding: 30px;
+    text-align: center;
+    margin: 0;
 }
-
 h1, h2, h3 {
     font-family: "Pacifico", calibri, candara, Optima, Arial, sans-serif;
     font-weight: normal;    
@@ -39,38 +40,41 @@ h1 {
     margin-top: 0.4219em;
     margin-bottom: 0;
     color: rgb(98, 173, 201);    
+    width: 100%;
+    height: 275px;
+    text-align: center;
+    
 }
-
 h2 {
     font-size: 1.5em;
     font-family: Indie - Flower;
     line-height: 1.2558em;
     margin: 0.4219em auto 0.4219em auto; 
+    margin-top: 25px;
     color: rgb(226, 226, 226)
 }
-
 h3 {
     font-size: 1.5263em;
     line-height: 1.8621em;
     margin-top: 0.9310em;
     margin-bottom: 0;
+    text-align: center;
+    margin: 0;
     color: rgb(226, 226, 226)
 }
-
 p {
     font-size: 1em;
     line-height: 1.4211em;
     margin-top: 1.4211em;
     margin-bottom: 0;
     color: rgb(98, 173, 201);
-}
-
-img {
-    width: 100%;    
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 a:link {
-    color: rgba(180, 180, 180);
+    color: rgb(180, 180, 180);
+    font-style: normal;
 }
     a:visited {
         color: rgba(83, 221, 150, 0.57);
@@ -81,17 +85,81 @@ a:link {
     a:active {
         color: rgb(244, 241, 247);
     }
+
+.button {
+    background-color: rgb(26, 131, 107);
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 10px;
+    position: relative;
+    
+}
+.button a {
+    color: rgba(19, 227, 227, 0.76);
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    padding: 5px;    
+}
+.button a:hover {
+    color: rgb(255,255,255);
+    transition: .5s color;
+    background: rgba(49, 82, 190, 0.28);
+    border-radius: 10px;
+}
+.featured-info h3 {
+    border-bottom: 1px solid rgba(75, 112, 181, 0.57);
+}
+
+.featured-info p {
+    font-style:italic;
+}
+
+.featured-info ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+
+.gallery {
+    margin-top: 30px;
+  
+}
+
+@media screen and (min-width: 450px) {
+    .gallery img {
+        max-width: 300px;
+    }
+} /*media querie for 600px*/
+
+@media screen and (min-width: 625px) {
+    .feature-header {
+        text-align: center;
+    }
+}
 /*________________________________________________________________
                         LOGO STYLES
 ________________________________________________________________*/
+
 .logo {
     display: block;  
     margin: 0 auto; /* centres*/
-    width: 550px;
+    max-width: 550px;
 }
     .logo img {
-        width: 550px;
+        min-width: 200px;
+}/*________________________________________________________________
+                    FOOD & DRINK STYLES
+________________________________________________________________*/
+.food-drink-page .featured-info ul {
+    font-style: italic;
 }
+.food-drink-page .featured-info p {
+    font-style: italic;
+}
+
 /*________________________________________________________________
                     MAIN NAVIGATION STYLES
 ________________________________________________________________*/
@@ -105,7 +173,7 @@ ________________________________________________________________*/
 }
 .main-navigation a {
     display: block;
-    padding: 15px 10px;
+    padding: 10px 10px;
     text-decoration: none;
     text-transform: uppercase;
     background: rgba(9, 26, 54, 0.44);
@@ -122,12 +190,41 @@ ________________________________________________________________*/
 .main-navigation a:active {
     color: rgb(42, 99, 206);
 }
+
+@media screen and (min-width: 625px) {
+    
+    .main-navigation {
+        min-height: 250px;
+        border-top: 1px solid rgb(105, 156, 188);
+        border-bottom: 1px solid rgb(105, 156, 188);
+    }
+    
+        .main-navigation ul {
+            max-width: 950px;
+            margin: 0 auto;
+            position: relative;
+        }    
+        .main-navigation li {
+            float: left;
+            margin-left: 30px;
+            width: 28%;
+            height: 70px;
+        }
+        .main-navigation a {
+            background: none;
+        }
+        .main-navigation a:hover {
+            background: none;
+        }
+    h1 {
+        width: 100%;
+        height: 100px;
+    }
+} /* media querie for  */
+
 /*________________________________________________________________
                       HOME PAGE STYLES
 ________________________________________________________________*/
-.featured-info {
-    
-}
 
 
 /*________________________________________________________________
@@ -137,12 +234,14 @@ ________________________________________________________________*/
 footer {
     padding: 10px 0;
     color: midnightblue;
+    margin-top: 20px;
 }
 
     h4 {
         text-transform: uppercase;
+        margin: 0;
     }
 
     footer p {
-        margin: 0;
+        margin: 0 auto;
     }
