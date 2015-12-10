@@ -5,13 +5,15 @@
   <title>Blue Lagoon Cinema: Food and Drink</title>
     <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Architects Daughter' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Alegreya+SC|Alegreya:400italic,400,700' rel='stylesheet' type='text/css'>
-    <link href="styles/normalize.css" rel="stylesheet">
-  <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/bootstrap.min.css" rel="stylesheet"> 
+    <link href="styles/bootstrap.css" rel="stylesheet">  
+    <link href="styles/main.css" rel="stylesheet">
+    <script src="scripts/jquery.js"> </script>
+    <script src="scripts/bootstrap.js"> </script>
     </head>
 <body class="food-drink-page">
     <div class="container">
-        <header>
+        <header class="container">
             <a href="index.html" class="logo"><img src="images/maybelogo.jpg" alt="BlueLagoonlogo"></a>
             <nav class="main-navigation">
                 <ul>
@@ -27,48 +29,94 @@
 
         <div class="feature-header">
             <h1>Food &amp; Drink</h1>
-            <h2>Snacks &amp; Beverages</h2>
             <p></p>
         </div>
-
-        <div class ="gallery">
-            <img src="images/hotfood/baconcheeseburger.jpg" alt="baconcheeseburger">
-            <img src="images/hotfood/Chili-Hot-Dog.jpg" alt="chilli hot dog">
-            <img src="images/hotfood/Nacjos.jpg" alt="nachos">
+         <div class="container-fluid">
+            <div class="row">
+                <aside class="col-sm-6">
+                    <div class="featured-info">
+                        <h3>Hot Snacks</h3>
+                        <ul>
+                            <li>Cheese &amp; Bacon Burger </li>
+                            <li>Meditteranean Veggie Burger</li>
+                            <li>Chilli Cheese Hot Dog</li>
+                            <li>Nachos</li>
+                            <li>Pizza </li>
+                            <li>Homemade Fries</li>
+                        </ul>
+                    </div>
+                </aside>
+                <section class="col-cm-3">
+                    <div class="featured-info">
+                        <h3>Other Snacks</h3>
+                        <ul>
+                            <li>Pick and mix stand with over 30 sweets to choose from. Indulge your sweet tooth.</li>
+                            <li>Sweet, buttered, toffee or salted popcorn</li>
+                            <li>Mini pringle tubs</li>
+                            <li>Ben &amp; Jerrys Ice cream</li>
+                        </ul>
+                    </div>
+                </section>
+                <aside class="col-cm-3">
+                    <div>
+                        <h3>Beverages</h3>
+                        <p>Choose from one of our many drinks, including: Pepsi, Diet Pepsi, Fanta, Irn Bru, Sprite, and still or sparkling water.</p>
+                    </div>
+                </aside>
+             </div>
+        
+        
+            <div class="row">
+                <aside class="col-sm-3">
+                    <div class ="gallery">
+                        <img src="images/hotfood/baconcheeseburger.jpg" class="img-responsive" alt="baconcheeseburger">
+                            <h3>Bacon Burger</h3>
+                        <img src="images/hotfood/Chili-Hot-Dog.jpg" class="img-responsive" alt="chilli hot dog">
+                            <h3>Chili HotDog</h3>
+                        <img src="images/hotfood/Nacjos.jpg" class="img-responsive" alt="nachos">
+                            <h3>Nachos</h3>
+                    </div>
+                </aside>
+                
+                <section class="col-sm-3">
+                    <div class ="gallery">
+                        <img src="images/hotfood/veg-burger.jpg" class="img-responsive" alt="veg burger">
+                            <h3>Veg Burger</h3>
+                        <img src="images/hotfood/slice_PT_cheese.jpeg" class="img-responsive" alt="pizza">
+                            <h3>Pizza</h3>
+                        <img src="images/hotfood/fries.jpg" class="img-responsive" alt="fries">
+                            <h3>Fries</h3>
+                    </div>
+                </section>
+                
+                <section class="col-sm-3">
+                    <div class ="gallery">
+                        <img src="images/snacks/ben-jerrys.jpg" class="img-responsive" alt="ben&jerrys">
+                          <h3>Ben &amp; Jerrys</h3>
+                        <img src="images/snacks/popcorn.jpg" class="img-responsive" alt="popcorn">
+                          <h3>Popcorn</h3>
+                        <img src="images/snacks/pringles.jpg" class="img-responsive" alt="pringles">
+                          <h3>Pringles</h3>
+                    </div>
+                </section>
+                
+                <aside class="col-sm-3">
+                    <div class ="gallery">
+                        <img src="images/beverages/pepsi.jpeg" class="img-responsive"alt="pepsi">
+                            <h3>Pepsi</h3>
+                        <img src="images/beverages/fanta-usa.jpeg" class="img-responsive" alt="fanta">
+                            <h3>Fanta</h3>
+                        <img src="images/beverages/water.jpg" class="img-responsive" alt="water">
+                            <h3>Water</h3>
+                    </div>
+                </aside>
+            </div>
         </div>
 
-        <div class="featured-info">
-        <h3>Hot Snacks</h3>
+        
 
-            <ul>
-                <li>Cheese &amp; Bacon Burger </li>
-                <li>Meditteranean Veggie Burger</li>
-                <li>Chilli Cheese Hot Dog</li>
-                <li>Nachos</li>
-                <li>Pizza </li>
-                <li>Homemade Fries</li>
-            </ul>
-        </div>
-
-        <div class ="gallery">
-            <img src="images/snacks/ben-jerrys.jpg" alt="ben&jerrys">
-            <img src="images/snacks/popcorn.jpg" alt="popcorn">
-            <img src="images/snacks/pringles.jpg" alt="pringles">
-        </div>
-
-        <div class="featured-info">
-            <h3>Other Snacks</h3>
-            <ul>
-                <li>Pick and mix stand with over 30 sweets to choose from. Indulge your sweet tooth.</li>
-                <li>Sweet, buttered, toffee or salted popcorn</li>
-                <li>Mini pringle tubs</li>
-                <li>Ben &amp; Jerrys Ice cream</li>
-            </ul>
-
-            <h3>Beverages</h3>
-            <p>Pepsi, Diet Pepsi, Fanta, Irn Bru, Sprite, and still or sparkling water.</p>
-        </div>
-
+        
+        
             <footer>
                 <h4>CONTACT US</h4>
 

@@ -1,3 +1,4 @@
+
 /*________________________________________________________________________
                             COLOR GUIDE
 Blue: rgb(43, 18, 234);
@@ -10,6 +11,7 @@ ________________________________________________________________________*/
                             GLOBAL STYLES
 ________________________________________________________________________*/
 
+
 body {
     font-size: 19px;
     font-family: "Architects Daughter", calibri, candara, Optima, Arial, sans-serif;
@@ -19,15 +21,13 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-image: rgba(15, 15, 15, 0.72);
-   
+    text-align: center;
 }
 
 .container {
     background: rgb(15,15,15); /*IE8 */
     background: rgba(15, 15, 15, 0.72);
-    padding: 30px;
-    text-align: center;
-    margin: 0;
+
 }
 h1, h2, h3 {
     font-family: "Pacifico", calibri, candara, Optima, Arial, sans-serif;
@@ -58,6 +58,7 @@ h3 {
     line-height: 1.8621em;
     margin-top: 0.9310em;
     margin-bottom: 0;
+    float: none;
     text-align: center;
     margin: 0;
     color: rgb(226, 226, 226)
@@ -120,39 +121,70 @@ a:link {
 .featured-info ul {
     list-style: none;
     padding-left: 0;
+    text-align: center;
 }
 
-
+img {
+    width: 400px; 
+    margin: 0 auto;
+}
 .gallery {
     margin-top: 30px;
   
 }
 
-@media screen and (min-width: 450px) {
-    .gallery img {
-        max-width: 300px;
+.gallery img {
+    margin: 0 auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    box-shadow: rgba(0,0,0,.5) 10px 10px 60px;
+}
+
+@media screen and (min-width: 500px) {
+    
+    .gallery {
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
     }
+        .gallery img {
+            max-width: 220px;
+            height: 180px;
+            margin: 0 auto;
+        }
 } /*media querie for 600px*/
+
+@media screen and (min-width: 750px) {
+    
+    .gallery {
+        float: left;
+    }
+}
 
 @media screen and (min-width: 625px) {
     .feature-header {
         text-align: center;
     }
 }
+
 /*________________________________________________________________
                         LOGO STYLES
 ________________________________________________________________*/
 
+
 .logo {
     display: block;  
     margin: 0 auto; /* centres*/
-    max-width: 550px;
+   max-width: 550px;
 }
     .logo img {
         min-width: 200px;
-}/*________________________________________________________________
+}
+
+/*________________________________________________________________
                     FOOD & DRINK STYLES
 ________________________________________________________________*/
+
 .food-drink-page .featured-info ul {
     font-style: italic;
 }
@@ -163,6 +195,7 @@ ________________________________________________________________*/
 /*________________________________________________________________
                     MAIN NAVIGATION STYLES
 ________________________________________________________________*/
+
 .main-navigation ul {   
     padding-left: 0;    
 }
@@ -220,11 +253,19 @@ ________________________________________________________________*/
         width: 100%;
         height: 100px;
     }
-} /* media querie for  */
+    
+}
+
+/* media querie for  */
 
 /*________________________________________________________________
-                      HOME PAGE STYLES
+                      MENU PAGE STYLES
 ________________________________________________________________*/
+
+@media screen and (min-width: 1050px) {
+    
+    
+}
 
 
 /*________________________________________________________________
@@ -232,7 +273,7 @@ ________________________________________________________________*/
 ________________________________________________________________*/
 
 footer {
-    padding: 10px 0;
+    padding: 30px 0;
     color: midnightblue;
     margin-top: 20px;
 }
@@ -245,3 +286,24 @@ footer {
     footer p {
         margin: 0 auto;
     }
+
+.js-video {
+  height: 0;
+  padding-top: 25px;
+  padding-bottom: 67.5%;
+  margin-bottom: 10px;
+  margin 0;
+  overflow: hidden;
+}
+ 
+.js-video.widescreen {
+  padding-bottom: 56.34%;
+}
+
+.js-video embed, .js-video iframe, .js-video object, .js-video video {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
